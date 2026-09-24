@@ -1,0 +1,1 @@
+export default function Page(){return <main className="container article"><div className="eyebrow">Legal</div><h1>Términos de uso</h1><p>CurioWorld ofrece contenido informativo y divulgativo. Los datos pueden actualizarse y el lector debe consultar las fuentes originales cuando una cuestión sea importante para su situación particular.</p></main>}

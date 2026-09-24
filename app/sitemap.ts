@@ -1,0 +1,2 @@
+import type {MetadataRoute} from 'next'; import {articles} from '@/lib/data';
+export default function sitemap():MetadataRoute.Sitemap{const b=process.env.NEXT_PUBLIC_SITE_URL||'http://localhost:3000';return[{url:b},{url:`${b}/explorar`},{url:`${b}/sobre`},{url:`${b}/contacto`},{url:`${b}/privacidad`},{url:`${b}/terminos`},...articles.map(a=>({url:`${b}/articulo/${a.slug}`,lastModified:new Date(a.date)}))];}
